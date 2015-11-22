@@ -22,10 +22,6 @@ class ViewController: UIViewController {
     // set the delegate
     textField.delegate = self
   }
-  
-  @IBAction func sendText(sender: AnyObject) {
-    
-  }
 }
 
 extension ViewController:UITextFieldDelegate {
