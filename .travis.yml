@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode7.1
+xcode_project: LimitTextFields.xcodeproj
+xcode_scheme: LimitTextFields
+xcode_sdk: iphonesimulator9.1
