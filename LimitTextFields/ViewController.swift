@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController:UITextFieldDelegate {
-  func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     
     // to allow backspace when limit exceeds
     if (string.characters.count == 0 && range.length == 1) {
@@ -35,7 +35,7 @@ extension ViewController:UITextFieldDelegate {
     // you should check for the specific textfield or these conditions will apply for all of them
     // don't forget to set delegate.
     if textField.isEqual(self.textField) {
-      let width:CGFloat = textField.intrinsicContentSize().width
+        let width:CGFloat = textField.intrinsicContentSize.width
       let currentText:String = textField.text ?? ""
       print("width:\(width) - count:\(currentText.characters.count)")
       
