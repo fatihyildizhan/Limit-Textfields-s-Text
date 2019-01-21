@@ -45,7 +45,7 @@ extension ViewController:UITextFieldDelegate {
       }
       
       if currentText.characters.count >= maxCount {
-        print("count-limit is exceeded")
+        print("count-limit is exceeded.")
         return false
       }
     }
